@@ -54,3 +54,8 @@ To install Gum, you can use:
 
 ## Example Workflow
 
+![image](https://github.com/user-attachments/assets/48ee2ba8-b513-4bf0-8e67-f9752d919a5d)
+![image](https://github.com/user-attachments/assets/c60173d9-c70d-473c-b7cb-a3757e1165e0)
+
+
+![image](https://github.com/user-attachments/assets/bf572b19-4ab8-47af-8ba4-4689dbbf0b2f)
