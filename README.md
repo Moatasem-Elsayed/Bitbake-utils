@@ -115,7 +115,7 @@ Option	Description
 -m	Search for machine configuration files.
 -i	Search for image recipes.
 -h	Display this help message.
-
+```
 
 ![image](https://github.com/user-attachments/assets/29504c42-e94d-4192-afbc-b4231cf64bf1)
 
