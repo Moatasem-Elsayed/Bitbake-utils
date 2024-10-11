@@ -2,7 +2,7 @@
 # Bitbake Utils
 -  bitbake-append
 - [ ] bitbake-variables
-- [ ] bitbake-search
+- bitbake-search
 - [ ] bitbake-glossery
 ## BBAppend Creator Script
 
