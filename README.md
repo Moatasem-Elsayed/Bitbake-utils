@@ -56,6 +56,63 @@ To install Gum, you can use:
 
 ![image](https://github.com/user-attachments/assets/48ee2ba8-b513-4bf0-8e67-f9752d919a5d)
 ![image](https://github.com/user-attachments/assets/c60173d9-c70d-473c-b7cb-a3757e1165e0)
-
-
 ![image](https://github.com/user-attachments/assets/bf572b19-4ab8-47af-8ba4-4689dbbf0b2f)
+
+
+# Bitbake Layer and Recipe Search Script
+
+This Bash script helps you search for Bitbake layers and recipes within a Yocto Project environment. It can search for distribution configuration files, machine files, and image recipes across different layers in a Yocto build setup. The script also provides an option to display usage help.
+
+## Features
+
+- Search for Bitbake **distro** configuration files.
+- Search for Bitbake **machine** configuration files.
+- Search for **image** recipes.
+- Display a help message that describes usage.
+
+## Prerequisites
+
+This script assumes that you are in a Yocto build environment and have the required Bitbake layers properly configured. The following files are expected to be sourced:
+- `bitbake-bblayers.sh`: Script to retrieve Bitbake layers.
+- `bitbake-recipes.sh`: Script for handling Bitbake recipes.
+
+Ensure that these scripts are available and contain the necessary functions such as `getbblayers`.
+
+## Usage
+
+```bash
+./search-bitbake.sh [options]
+Here is a README.md file for your Bash script. It describes what the script does, how to use it, and includes example usage scenarios.
+
+markdown
+
+# Bitbake Layer and Recipe Search Script
+
+This Bash script helps you search for Bitbake layers and recipes within a Yocto Project environment. It can search for distribution configuration files, machine files, and image recipes across different layers in a Yocto build setup. The script also provides an option to display usage help.
+
+## Features
+
+- Search for Bitbake **distro** configuration files.
+- Search for Bitbake **machine** configuration files.
+- Search for **image** recipes.
+- Display a help message that describes usage.
+
+## Prerequisites
+
+This script assumes that you are in a Yocto build environment and have the required Bitbake layers properly configured. The following files are expected to be sourced:
+- `bitbake-bblayers.sh`: Script to retrieve Bitbake layers.
+- `bitbake-recipes.sh`: Script for handling Bitbake recipes.
+
+Ensure that these scripts are available and contain the necessary functions such as `getbblayers`.
+
+## Usage
+
+```bash
+./search-bitbake.sh [options]
+
+Option	Description
+-d	Search for distro configuration files.
+-m	Search for machine configuration files.
+-i	Search for image recipes.
+-h	Display this help message.
+![image](https://github.com/user-attachments/assets/06728a1b-3bfa-4ea5-a401-43abd9a4818a)
