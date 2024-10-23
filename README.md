@@ -7,7 +7,7 @@
 ## BBAppend Creator Script
 
 This script is designed to simplify the process of creating `.bbappend` files in Yocto by automating the layer and recipe selection process. The script searches through the available layers and recipes, allows the user to select one using a Gum-based interactive prompt, and automatically generates the `.bbappend` file in the appropriate directory.
-
+  The Script is flexible to replace TOPDIR with its value
 ## Requirements
 
 - **Yocto Project**: Ensure you're working in a Yocto Project environment with a valid `BBPATH` set up.
