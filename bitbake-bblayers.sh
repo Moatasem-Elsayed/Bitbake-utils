@@ -7,6 +7,7 @@ getbblayers() {
         if [ -z "$line" ]; then
             continue
         fi
+        line=$(echo "$line" | sed "s|\${TOPDIR}|${BBPATH}|g")
         if [ -d "$line" ]; then
             layers+=("$line")
         fi

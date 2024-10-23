@@ -3,13 +3,15 @@ recipe=$1
 if [ -z "$1" ]; then
     exit 1
 fi
-# set -x
-source bitbake-bblayers.sh
-source bitbake-recipes.sh
+scriptdir=$(dirname "$(realpath "$0")")
+# shellcheck source=/dev/null
+source "$scriptdir/bitbake-bblayers.sh"
+# shellcheck source=/dev/null
+source "$scriptdir"/bitbake-recipes.sh
 layers=$(getbblayers)
 read -ra layers <<<"$layers"
 recipes=$(getrecipes "$recipe" "${layers[@]}")
-read -ra recipes <<<$recipes
+read -ra recipes <<<"$recipes"
 selected=$(gum choose "${recipes[@]}")
 basename_recipe=$(basename "${selected%_*}")
 diremeta=$(dirname "${selected#*/meta}")
